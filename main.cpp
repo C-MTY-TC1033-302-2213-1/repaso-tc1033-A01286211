@@ -9,7 +9,6 @@
 #include <iomanip> // for std::setprecision()
 #include "Punto.hpp"
 #include "Triangulo.hpp"
-#include "Triangulo.cpp"
 
 using namespace std;
 
