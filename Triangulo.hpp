@@ -1,19 +1,14 @@
-#ifndef Triangulo_hpp
-#define Triangulo_hpp
+#ifndef TRIANGULO_HPP
+#define TRIANGULO_HPP
 
 #include "Punto.hpp"
-#include "Punto.cpp"
 
 #include <stdio.h>
-
-using namespace std;
 
 class Triangulo{
 
     private:
-        Punto v1;
-        Punto v2;
-        Punto v3;
+        Punto v1,v2,v3;
 
     public:
         //Método Constructor/Con Parámetros
@@ -33,7 +28,7 @@ class Triangulo{
         //Otros Métodos
         double perimetro();
         double area();
-        string str();
+        std::string str();
 };
 
-#endif /* Triangulo_hpp */
+#endif // TRIANGULO_HPP

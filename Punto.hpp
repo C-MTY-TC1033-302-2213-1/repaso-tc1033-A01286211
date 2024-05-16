@@ -1,35 +1,32 @@
-#ifndef Punto_hpp
-#define Punto_hpp
+#ifndef PUNTO_HPP
+#define PUNTO_HPP
 
 #include <stdio.h>
 #include <string>
 #include <math.h>
 
-using namespace std;
-
 class Punto{
 
-    private:
+private:
+    double x, y;
 
-        double x;
-        double y;
-
-    public:
-        //Método Constructor Default/Con Parámetros
-        Punto();
-        Punto(double _x, double _y);
+public:
+    //Método Constructor Default/Con Parámetros
+    Punto();
+    Punto(double _x, double _y);
         
-        //Métodos de Acceso
-        double getX();
-        double getY();
+    //Métodos de Acceso
+    double getX();
+    double getY();
 
-        //Métodos Modificadores
-        void setX(double _x);
-        void setY(double _y);
+    //Métodos Modificadores
+    void setX(double _x);
+    void setY(double _y);
 
-        //Otros Métodos
-        double calculaDistancia(Punto p2);
-        string str();
+    //Otros Métodos
+    double calculaDistancia(Punto p2);
+    std::string str();
+
 };
 
-#endif /* Punto_hpp */
+#endif //PUNTO.HPP
